@@ -2,7 +2,7 @@
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-   <title><%= @title %></title>
+   <title><%= @title %>: <%= @q %></title>
    <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
    <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
    <style type="text/css">
@@ -32,7 +32,7 @@
     <form action="#" method="get" id="mainform">
           <div>
                <label for="search">Search:</label>
-               <input type="text" name="search" id="search" value=""/>
+               <input type="text" name="search" id="search" value="<%= @q %>"/>
                <input type="submit" value="Go!">
           </div>
     </form>
@@ -43,7 +43,7 @@
 
     </div>
     </div>
-   <div id="ft" role="contentinfo"><p>Created by @<a href="http://thinkphp.ro">thinkphp</a> using <a href="http://developer.yahoo.com/yui/grids/">YUI</a>, <a href="http://www.ruby-lang.org/en/">ruby</a>, <a href="http://www.sinatrarb.com/documentation">Sinatra</a></p></div>
+   <div id="ft" role="contentinfo"><p>Created by <a href="http://thinkphp.ro/+">Adrian Statescu</a> using <a href="http://developer.yahoo.com/yui/grids/">YUI</a> and <a href="http://www.sinatrarb.com/documentation">Sinatra</a></p></div>
 </div>
 
 
