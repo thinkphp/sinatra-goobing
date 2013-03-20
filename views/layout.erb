@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+   <title><%= @title %></title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+   <style type="text/css">
+    html,body{color:#fff;background:#222;font-family:calibri,verdana,arial,sans-serif;}
+    h1{font-size:300%;margin:0;text-align:right;color:#3c3}
+    h2{background:#369;padding:5px;color:#fff;font-weight:bold;-moz-box-shadow: 0px 4px 2px -2px #000;-moz-border-radius:5px;-webkit-border-radius:5px;text-shadow: #000 1px 1px;}
+    h3 a{color:#69c;text-decoration:none;}
+    h3{margin:0 0 .2em 0}
+    .info{font-size:200%;color:#999;margin:1em 0;}
+    input[type=text]{-moz-border-radius:5px;-webkit-border-radius:5px;border:1px solid #fff;padding:3px;}
+    input[type=submit]{-moz-border-radius:5px;-webkit-border-radius:5px;border:2px solid #3c3;background:#3c3}
+    form{font-size:150%;margin-top:-1.8em;}
+    ul,ul li{margin:0;padding:0;list-style:none;}
+    #google p span, #bing p span{display:block;text-align: left;margin-top:.5em;font-size:90%;color:#999;}
+    #yahoo a{color:#c6c;}
+    #yahoo h2{background:#c6c;}
+    #bing a{color:#fc6;}
+    #bing h2{background:#fc6;}
+    #ft p{color:#666;text-align: left;}
+    #ft a{color:#ccc;}
+   </style>  
+</head>
+<body>
+<div id="doc2" class="yui-t7">
+   <div id="hd" role="banner"><h1>GooBing</h1></div>
+   <div id="bd" role="main">
+    <form action="#" method="get" id="mainform">
+          <div>
+               <label for="search">Search:</label>
+               <input type="text" name="search" id="search" value=""/>
+               <input type="submit" value="Go!">
+          </div>
+    </form>
+    <p class="info">GooBing allows you to search Google and Bing in one go</p>
+    <div class="yui-gb">
+
+        <%= yield %>
+
+    </div>
+    </div>
+   <div id="ft" role="contentinfo"><p>Created by @<a href="http://thinkphp.ro">thinkphp</a> using <a href="http://developer.yahoo.com/yui/grids/">YUI</a>, <a href="http://www.ruby-lang.org/en/">ruby</a>, <a href="http://www.sinatrarb.com/documentation">Sinatra</a></p></div>
+</div>
+
+
+<script type="text/javascript" src="js/GooBing.js"></script>
+</body>
+</html>
